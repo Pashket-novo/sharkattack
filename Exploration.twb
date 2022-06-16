@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Top Customers' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='5'>
+        <calculation class='tableau' formula='5' />
+        <range granularity='5' max='20' min='5' />
+      </column>
+      <column caption='Profit Bin Size' datatype='integer' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='200'>
+        <calculation class='tableau' formula='200' />
+        <range granularity='50' max='200' min='50' />
+      </column>
+    </datasource>
+    <datasource caption='Sheet 1 - attacks (attacks)' inline='true' name='federated.1ggfk621dr6wru11zlayc0aj5gxs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='attacks' name='excel-direct.1122r0e0ognpa61bg5c2d1dlvfk9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/pavelzemnukhov/OneDrive - Monash University/MONASH/FIT 5147/PROJECT/proposed_datasets/attacks.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1122r0e0ognpa61bg5c2d1dlvfk9' name='Sheet 1 - attacks' table='[&apos;Sheet 1 - attacks$&apos;]' type='table'>
+          <columns gridOrigin='A1:S6303:no:A1:S6303:0' header='yes' outcome='2'>
+            <column datatype='string' name='Case Number' ordinal='0' />
+            <column datatype='date' date-parse-format='dd-MMM-yyyy|#|#|&apos;Reported&apos; dd-MMM-yyyy' name='Date' ordinal='1' />
+            <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='2' />
+            <column datatype='string' name='Type' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='string' name='Area' ordinal='5' />
+            <column datatype='string' name='Location' ordinal='6' />
+            <column datatype='string' name='Activity' ordinal='7' />
+            <column datatype='string' name='Name' ordinal='8' />
+            <column datatype='string' name='Sex' ordinal='9' />
+            <column datatype='integer' name='Age' ordinal='10' />
+            <column datatype='string' name='Injury' ordinal='11' />
+            <column datatype='string' name='Fatal (Y/N)' ordinal='12' />
+            <column datatype='string' name='Time' ordinal='13' />
+            <column datatype='string' name='Species' ordinal='14' />
+            <column datatype='string' name='Investigator or Source' ordinal='15' />
+            <column datatype='string' name='href' ordinal='16' />
+            <column datatype='string' name='F18' ordinal='17' />
+            <column datatype='string' name='F19' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1122r0e0ognpa61bg5c2d1dlvfk9' name='Sheet 1 - attacks' table='[&apos;Sheet 1 - attacks$&apos;]' type='table'>
+          <columns gridOrigin='A1:S6303:no:A1:S6303:0' header='yes' outcome='2'>
+            <column datatype='string' name='Case Number' ordinal='0' />
+            <column datatype='date' date-parse-format='dd-MMM-yyyy|#|#|&apos;Reported&apos; dd-MMM-yyyy' name='Date' ordinal='1' />
+            <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='2' />
+            <column datatype='string' name='Type' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='string' name='Area' ordinal='5' />
+            <column datatype='string' name='Location' ordinal='6' />
+            <column datatype='string' name='Activity' ordinal='7' />
+            <column datatype='string' name='Name' ordinal='8' />
+            <column datatype='string' name='Sex' ordinal='9' />
+            <column datatype='integer' name='Age' ordinal='10' />
+            <column datatype='string' name='Injury' ordinal='11' />
+            <column datatype='string' name='Fatal (Y/N)' ordinal='12' />
+            <column datatype='string' name='Time' ordinal='13' />
+            <column datatype='string' name='Species' ordinal='14' />
+            <column datatype='string' name='Investigator or Source' ordinal='15' />
+            <column datatype='string' name='href' ordinal='16' />
+            <column datatype='string' name='F18' ordinal='17' />
+            <column datatype='string' name='F19' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>7</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:S6303:no:A1:S6303:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Case Number]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Case Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Activity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Activity]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Activity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injury</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Injury]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Injury</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatal (Y/N)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Fatal (Y/N)]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Fatal (Y/N)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Species</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Species]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Species</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investigator or Source</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Investigator or Source]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>Investigator or Source</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>href</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[href]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>href</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F18</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F18]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>F18</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F19</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F19]</local-name>
+            <parent-name>[Sheet 1 - attacks]</parent-name>
+            <remote-alias>F19</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Area]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' hidden='true' name='[F18]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F19]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet 1 - attacks' datatype='table' name='[__tableau_internal_object_id__].[Sheet 1 - attacks_6876BABB93864D9D8247D92103CF91FD]' role='measure' type='quantitative' />
+      <column caption='Href' datatype='string' name='[href]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet 1 - attacks' id='Sheet 1 - attacks_6876BABB93864D9D8247D92103CF91FD'>
+            <properties context=''>
+              <relation connection='excel-direct.1122r0e0ognpa61bg5c2d1dlvfk9' name='Sheet 1 - attacks' table='[&apos;Sheet 1 - attacks$&apos;]' type='table'>
+                <columns gridOrigin='A1:S6303:no:A1:S6303:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Case Number' ordinal='0' />
+                  <column datatype='date' date-parse-format='dd-MMM-yyyy|#|#|&apos;Reported&apos; dd-MMM-yyyy' name='Date' ordinal='1' />
+                  <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='2' />
+                  <column datatype='string' name='Type' ordinal='3' />
+                  <column datatype='string' name='Country' ordinal='4' />
+                  <column datatype='string' name='Area' ordinal='5' />
+                  <column datatype='string' name='Location' ordinal='6' />
+                  <column datatype='string' name='Activity' ordinal='7' />
+                  <column datatype='string' name='Name' ordinal='8' />
+                  <column datatype='string' name='Sex' ordinal='9' />
+                  <column datatype='integer' name='Age' ordinal='10' />
+                  <column datatype='string' name='Injury' ordinal='11' />
+                  <column datatype='string' name='Fatal (Y/N)' ordinal='12' />
+                  <column datatype='string' name='Time' ordinal='13' />
+                  <column datatype='string' name='Species' ordinal='14' />
+                  <column datatype='string' name='Investigator or Source' ordinal='15' />
+                  <column datatype='string' name='href' ordinal='16' />
+                  <column datatype='string' name='F18' ordinal='17' />
+                  <column datatype='string' name='F19' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Date analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet 1 - attacks (attacks)' name='federated.1ggfk621dr6wru11zlayc0aj5gxs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ggfk621dr6wru11zlayc0aj5gxs'>
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet 1 - attacks' datatype='integer' name='[__tableau_internal_object_id__].[Sheet 1 - attacks_6876BABB93864D9D8247D92103CF91FD]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet 1 - attacks' datatype='table' name='[__tableau_internal_object_id__].[Sheet 1 - attacks_6876BABB93864D9D8247D92103CF91FD]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet 1 - attacks_6876BABB93864D9D8247D92103CF91FD]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet 1 - attacks_6876BABB93864D9D8247D92103CF91FD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ggfk621dr6wru11zlayc0aj5gxs].[__tableau_internal_object_id__].[cnt:Sheet 1 - attacks_6876BABB93864D9D8247D92103CF91FD:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ggfk621dr6wru11zlayc0aj5gxs].[__tableau_internal_object_id__].[cnt:Sheet 1 - attacks_6876BABB93864D9D8247D92103CF91FD:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1ggfk621dr6wru11zlayc0aj5gxs].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{B5FA6616-0ECF-4CF9-B5B7-DA6D3518A511}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.1ggfk621dr6wru11zlayc0aj5gxs].[yr:Date:ok]</field>
+                </fields>
+                <multibucket>
+                  <bucket>-2012</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ggfk621dr6wru11zlayc0aj5gxs].[none:Age:ok]</field>
+            <field>[federated.1ggfk621dr6wru11zlayc0aj5gxs].[none:Investigator or Source:nk]</field>
+            <field>[federated.1ggfk621dr6wru11zlayc0aj5gxs].[none:Year:qk]</field>
+            <field>[federated.1ggfk621dr6wru11zlayc0aj5gxs].[tyr:Date:ok]</field>
+            <field>[federated.1ggfk621dr6wru11zlayc0aj5gxs].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2973C2E9-1CC5-43C0-8CF0-C40BE4E2248E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='128' name='Sheet 1' width='384'>
+      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
+      TKdbQCIihvp/O0hyTSRYroQAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
